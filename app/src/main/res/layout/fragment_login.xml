@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".LoginFragment">
+
+
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:overScrollMode="never"
+        app:layout_constraintBottom_toBottomOf="parent"
+   >
+        <LinearLayout
+            android:id="@+id/login_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appBarLayout">
+
+
+
+            <TextView
+                android:id="@+id/error_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_large"
+                android:layout_marginBottom="@dimen/dp_8"
+                android:paddingVertical="@dimen/dp_16"
+                android:paddingHorizontal="@dimen/dp_14"
+                android:drawablePadding="@dimen/dp_16"
+                android:background="@drawable/bg_red_ffc_rounded_16dp"
+                android:gravity="start|center"
+                tools:text="Login"
+                android:textColor="@color/red_a30"
+                android:visibility="gone"
+                tools:visibility="visible"
+                 />
+
+
+
+                <EditText
+                    android:id="@+id/login_email_input_editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/margin_large"
+                    android:layout_marginBottom="@dimen/dp_8"
+                    android:paddingVertical="@dimen/dp_16"
+                    android:paddingHorizontal="@dimen/dp_14"
+                    android:drawablePadding="@dimen/dp_16"
+                    android:text="Email"
+
+                    />
+
+
+
+
+                <EditText
+                    android:id="@+id/login_password_input_editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/margin_large"
+                    android:layout_marginBottom="@dimen/dp_8"
+                    android:paddingVertical="@dimen/dp_16"
+                    android:paddingHorizontal="@dimen/dp_14"
+                    android:drawablePadding="@dimen/dp_16"
+                    tools:text="Password"
+                    />
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_16"
+                android:layout_marginHorizontal="@dimen/margin_large"
+                android:background="@drawable/bg_red_a30_rounded_16dp"
+                android:text="@string/login"
+                android:textAllCaps="false" />
+
+            <TextView
+                android:id="@+id/forgot_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_32"
+                android:layout_marginHorizontal="@dimen/margin_large"
+                android:text="@string/forgot_password"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@color/red_a30" />
+
+            <TextView
+                android:id="@+id/txtSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_16"
+                android:layout_marginBottom="@dimen/dp_32"
+                android:layout_marginHorizontal="@dimen/margin_large"
+                android:text="@string/don_t_have_an_account_signup"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@color/red_a30" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
